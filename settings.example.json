@@ -1,0 +1,19 @@
+{
+	"credentials" : {
+		"username" : "funny102938",
+		"password" : "afiej2398f23jfijiidjfijfehhue"
+	},
+
+	"safe" : 1,
+	"period" : "week",
+	"nresults" : 25,
+	"sortby" : "hot",
+	"selfposts" : 0,
+
+	"img_extensions" : [
+		".png",
+		".jpg",
+		".gif",
+		".tiff"
+	]
+}
