@@ -34,7 +34,13 @@ configpath = options.settings_path
 settings = json.load(open(configpath, 'rb'))
 
 # create Reddpic object and output JSON to stdout
-r = Reddpic(settings["credentials"]["username"], 
-			settings["credentials"]["password"])
+r = Reddpic(username=settings["credentials"]["username"], 
+			password=settings["credentials"]["password"],
+			appname=settings["appname"],
+			safe=settings["safe"], 
+			period=settings["period"],
+			sort=settings["sort"],
+			limit=settings["limit"],
+			extensions=settings["extensions"])
 r.query(options.terms, options.nots, output=True)
 

@@ -14,7 +14,16 @@ $ python reddpic.py \
 	--terms tim,howard,GoT \
 	--not brazil,columbia \
 	--config ./settings.example.json
-[{"title": "The one save I wish Tim Howard would have made. (GOT spoilers)", "downs": 0, "ups": 8, "image": "http://i.imgur.com/OM1SPmH.jpg", "ncomments": 2, "subbreddit": "funny"}]
+[
+    {
+        "title": "The one save I wish Tim Howard would have made. (GOT spoilers)", 
+        "downs": 0, 
+        "ups": 6, 
+        "image": "http://i.imgur.com/OM1SPmH.jpg", 
+        "ncomments": 2, 
+        "subbreddit": "funny"
+    }
+]
 ```
 
 ## Documentation of Reddit Search for `praw`
