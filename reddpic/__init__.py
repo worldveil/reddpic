@@ -21,7 +21,7 @@ class Reddpic(object):
         # set settings
         self.sort = sort or 'hot'
         self.period = period or 'month'
-        self.subreddits = subreddits or ["funny", "gifs"]
+        self.subreddits = subreddits or ["funny"]
         self.safe = True if safe else False
         self.limit = limit 
         self.extensions = extensions or Reddpic.IMG_EXTENSIONS
@@ -51,8 +51,9 @@ class Reddpic(object):
     def set_extensions(self, extensions):
         self.extensions = extensions
 
-    def query(self, terms, nots, output=False):
-        terms += ["-" + n for n in nots]
+    def query(self, terms, nots=None, output=False):
+        if nots:
+            terms += ["-" + n for n in nots]
         if self.safe:
             terms += ["nsfw:no"]
         terms += ["self:no"]

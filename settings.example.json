@@ -1,11 +1,11 @@
 {
 	"credentials" : {
-		"username" : "funny102938",
-		"password" : "afiej2398f23jfijiidjfijfehhue"
+		"username" : "example",
+		"password" : "Password123"
 	},
 
 	"safe" : 1,
-	"period" : "week",
+	"period" : "all",
 	"nresults" : 25,
 	"sortby" : "hot",
 	"selfposts" : 0,
