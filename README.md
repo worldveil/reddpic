@@ -5,7 +5,7 @@ reddpic
 
 ## Dependencies
 
-* [`praw`](https://github.com/praw-dev/praw/)
+* [`praw`](https://github.com/praw-dev/praw/) (pip install praw)
 
 ## Example
 

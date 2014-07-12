@@ -100,7 +100,7 @@ class Reddpic(object):
         return results
 
     def output_json(self, dictionary):
-        return json.dumps(dictionary)
+        return json.dumps(dictionary, indent=4)
 
     def is_image(self, url):
         isimage = 0
